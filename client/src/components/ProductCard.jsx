@@ -39,6 +39,7 @@ const ProductCard = ({ product }) => {
                   key={i}
                   className="md:w-3.5 w-3"
                   src={i < 4 ? assets.star_icon : assets.star_dull_icon}
+                  alt="start rating"
                   loading="lazy"
                 ></img>
               ))}

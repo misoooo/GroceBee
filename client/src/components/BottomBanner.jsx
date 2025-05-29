@@ -32,9 +32,9 @@ const BottomBanner = () => {
                 className="md:w-11 w-9"
               />
               <div>
-                <h3 className="text-lg md:text-xl font-semibold">
+                <h2 className="text-lg md:text-xl font-semibold">
                   {feature.title}
-                </h3>
+                </h2>
                 <p className="text-gray-500/70 text-xs md:text-sm">
                   {feature.description}
                 </p>
