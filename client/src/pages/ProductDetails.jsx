@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useAppContext } from "../context/AppContext";
 import { Link, useParams } from "react-router-dom";
 import { assets } from "../assets/assets";
@@ -53,7 +53,7 @@ const ProductDetails = () => {
             </div>
 
             <div className="border border-gray-500/30 max-w-100 rounded overflow-hidden">
-              <img src={thumbnail} alt="Selected product" />
+              <img src={thumbnail} alt="Selected product" loading="lazy" />
             </div>
           </div>
 
@@ -66,7 +66,8 @@ const ProductDetails = () => {
                 .map((_, i) => (
                   <img
                     src={i < 4 ? assets.star_icon : assets.star_dull_icon}
-                    alt=""
+                    alt="star icon"
+                    loading="lazy" 
                     className="md:w-4 w-3.5"
                   />
                 ))}
