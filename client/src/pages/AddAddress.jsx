@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { assets } from "../assets/assets";
 
 const InputField = (
@@ -122,6 +122,7 @@ const AddAddress = () => {
         <img
           src={assets.add_address_iamge}
           alt="Add Address"
+          loading="lazy" 
           className="md:mr-16 mb-16 md:mt-0"
         />
       </div>

@@ -15,7 +15,7 @@ const Cart = () => {
     getCartAmount,
   } = useAppContext();
   const [cartArray, setCartArray] = useState([]);
-  const [addresses, setAddress] = useState(dummyAddress);
+  const [addresses] = useState(dummyAddress);
   const [selectedAddress, setSelectedAddress] = useState(dummyAddress[0]);
   const [paymentOption, setPaymentOption] = useState("COD");
 
@@ -72,6 +72,7 @@ const Cart = () => {
                   className="max-w-full h-full object-cover"
                   src={product.image[0]}
                   alt={product.name}
+                  loading="lazy" 
                 />
               </div>
               <div>
@@ -114,6 +115,7 @@ const Cart = () => {
               <img
                 src={assets.remove_icon}
                 alt="remove"
+                loading="lazy" 
                 className="inline-block w-6 h-6"
               />
             </button>
@@ -131,6 +133,7 @@ const Cart = () => {
             className="group-hover:-translate-x-1 transition"
             src={assets.arrow_right_icon_colored}
             alt="arrow"
+            loading="lazy" 
           />
           Continue Shopping
         </button>
@@ -156,7 +159,7 @@ const Cart = () => {
             </button>
             {showAddress && (
               <div className="absolute top-12 py-1 bg-white border border-gray-300 text-sm w-full">
-                {addresses.map((address, index) => (
+                {addresses.map((address) => (
                   <p
                     onClick={() => {
                       setSelectedAddress(address);

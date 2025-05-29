@@ -43,7 +43,7 @@ const Navbar = () => {
             type="text"
             placeholder="Search products"
           />
-          <img src={assets.search_icon} alt="search" className="w-4 h-4" />
+          <img src={assets.search_icon} alt="search" className="w-4 h-4" loading="lazy"  />
         </div>
 
         <div
@@ -53,6 +53,7 @@ const Navbar = () => {
           <img
             src={assets.nav_cart_icon}
             alt="cart"
+            loading="lazy" 
             className="w-6 opacity-80"
           />
           <button className="absolute -top-2 -right-3 text-xs text-white bg-primary w-[18px] h-[18px] rounded-full">
@@ -69,7 +70,7 @@ const Navbar = () => {
           </button>
         ) : (
           <div className="relative group">
-            <img src={assets.profile_icon} className="w-10" alt="" />
+            <img src={assets.profile_icon} className="w-10" alt="" loading="lazy"  />
             <ul className="hidden group-hover:block absolute top-10 right-0 bg-white shadow border border-gray-200 py-2.5 w-30 rounded-md text-sm z-40">
               <li
                 onClick={() => navigate("my-orders")}
@@ -95,6 +96,7 @@ const Navbar = () => {
           <img
             src={assets.nav_cart_icon}
             alt="cart"
+            loading="lazy" 
             className="w-6 opacity-80"
           />
           <button className="absolute -top-2 -right-3 text-xs text-white bg-primary w-[18px] h-[18px] rounded-full">
@@ -107,7 +109,7 @@ const Navbar = () => {
           className=""
         >
           {/* Menu Icon SVG */}
-          <img src={assets.menu_icon} alt="menu" />
+          <img src={assets.menu_icon} alt="menu" loading="lazy" />
         </button>
       </div>
 

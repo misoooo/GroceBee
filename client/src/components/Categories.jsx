@@ -1,4 +1,3 @@
-import React from "react";
 import { categories } from "../assets/assets";
 import { useAppContext } from "../context/AppContext";
 
@@ -21,6 +20,9 @@ const Categories = () => {
             <img
               src={category.image}
               alt={category.text}
+              loading="lazy" 
+              width="336"
+        height="336"
               className="group-hover:scale-108 transition max-w-28"
             />
             <p>{category.text}</p>

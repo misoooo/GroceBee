@@ -1,4 +1,3 @@
-import React from "react";
 import { assets } from "../assets/assets";
 import { Link } from "react-router-dom";
 
@@ -8,11 +7,17 @@ const MainBanner = () => {
       <img
         src={assets.main_banner_bg}
         alt="banner"
+        fetchpriority="high"
+        width="2336"
+        height="848"
         className="w-full hidden md:block"
       />
       <img
         src={assets.main_banner_bg_sm}
         alt="banner"
+        fetchpriority="high"
+        width="993"
+        height="1818"
         className="w-full md:hidden"
       />
       <div className="absolute inset-0 flex flex-col items-center md:items-start justify-end md:justify-center pb-24 md:pb-0 px-4 md:pl-18 lg:pl-24">
