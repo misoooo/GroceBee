@@ -17,21 +17,21 @@ Check out the live application here: groce-bee.vercel.app
 📂 Project Structure
 The project is organized as follows:
 GroceBee/
-├── client/          # Frontend application
-├── README.md        # Project documentation
-└── ...              # Additional configuration and support files
+- client/   # Frontend application
+- README.md # Project documentation
+- ...       # Additional configuration and support files
 
 📦 Getting Started
 To run GroceBee locally, follow these steps:
 1. Clone the repository:
-   git clone https://github.com/misoooo/GroceBee.git
-   cd GroceBee
+   - git clone https://github.com/misoooo/GroceBee.git
+   - cd GroceBee
 2. Navigate to the client directory:
-   cd client
+   - cd client
 3. Install dependencies:
-   npm install
+   - npm install
 4. Start the development server:
-   npm start
+   - npm start
 The application should now be running at http://localhost:3000.
 
 📄 License
