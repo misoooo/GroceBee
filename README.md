@@ -33,3 +33,6 @@ To run GroceBee locally, follow these steps:
 4. Start the development server:
    npm start
 The application should now be running at http://localhost:3000.
+
+📄 License
+This project is licensed under the [MIT License](LICENSE).
